@@ -1,6 +1,7 @@
 import random
 import turtle as t
 
+
 t.bgcolor('yellow')
 
 caterpillar = t.Turtle()
@@ -55,6 +56,9 @@ def display_score(current_score):
     y = (t.window_height() / 2) - 50
     score_turtle.setpos(x, y)
     score_turtle.write(str(current_score), align='right' , font=('Arial', 40, 'bold'))
+if score > 20
+    game_over():
+
 
 def place_leaf ():
     leaf.ht()
@@ -84,7 +88,7 @@ def start_game():
             place_leaf()
             caterpillar_length = caterpillar_length + 1
             caterpillar.shapesize(1, caterpillar_length, 1)
-            caterpillar_speed = caterpillar_speed + 1
+            caterpillar_speed = caterpillar_speed + 0.5
             score = score + 1
             display_score(score)
         if outside_window():

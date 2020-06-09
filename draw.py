@@ -29,6 +29,9 @@ def X():
 def Space():
     t.undo()
 
+def E():
+    t.clear()
+
 t.onkey(move_up,'Up')
 t.onkey(move_right,'Right')
 t.onkey(move_down,'Down')
@@ -36,6 +39,7 @@ t.onkey(move_left,'Left')
 t.onkey(Z,'z')
 t.onkey(X,'x')
 t.onkey(Space,'space')
+t.onkey(E,'e')
 
 t.listen()
 t.mainloop()
