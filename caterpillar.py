@@ -1,6 +1,13 @@
 import random
 import turtle as t
+import time
 
+from pygame import mixer
+
+mixer.init()
+beep = mixer.Sound("beep.wav")
+beep.play()
+time.sleep(5)
 
 t.bgcolor('yellow')
 
@@ -56,11 +63,8 @@ def display_score(current_score):
     y = (t.window_height() / 2) - 50
     score_turtle.setpos(x, y)
     score_turtle.write(str(current_score), align='right' , font=('Arial', 40, 'bold'))
-if score > 20
-    game_over():
 
-
-def place_leaf ():
+def place_leaf():
     leaf.ht()
     leaf.setx(random.randint(-200, 200))
     leaf.sety(random.randint(-200, 200))
@@ -110,8 +114,6 @@ def move_left():
 def move_right():
     if caterpillar.heading() == 90 or caterpillar.heading() == 270:
         caterpillar.setheading(0)
-
-
 
 t.onkey(start_game, 'space')
 t.onkey(move_up, 'Up')
