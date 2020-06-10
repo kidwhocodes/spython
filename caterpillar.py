@@ -2,13 +2,6 @@ import random
 import turtle as t
 import time
 
-from pygame import mixer
-
-mixer.init()
-beep = mixer.Sound("beep.wav")
-beep.play()
-time.sleep(5)
-
 t.bgcolor('yellow')
 
 caterpillar = t.Turtle()
